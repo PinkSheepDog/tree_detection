@@ -23,8 +23,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy YOLOv7 code
 COPY yolov7/ ./yolov7/
-COPY models/ ./models/
-COPY utils/ ./utils/
 
 # Copy application files
 COPY app.py .
@@ -35,7 +33,7 @@ EXPOSE 8000
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/app:/app/yolov7
+ENV PYTHONPATH=/app/yolov7
 
 # Run the application
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
