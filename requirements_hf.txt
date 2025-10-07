@@ -1,0 +1,13 @@
+gradio==4.44.0
+torch==2.0.1
+torchvision==0.15.2
+opencv-python-headless==4.8.1.78
+numpy==1.24.3
+Pillow==10.0.0
+PyYAML==6.0.1
+scipy==1.11.2
+tqdm==4.66.1
+matplotlib==3.7.2
+seaborn==0.12.2
+pandas==2.0.3
+
